@@ -1,0 +1,280 @@
+<style>
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family: system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        touch-action: manipulation;
+      }
+
+      body {
+        position: relative;
+        min-height: 100%;
+        margin: 0;
+        font-feature-settings: "kern";
+      }
+
+       :where(*, *::before, *::after) {
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+
+      main {
+        display: block;
+      }
+
+       hr {
+        border-top-width: 1px;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+      }
+
+       :where(pre, code, kbd,samp) {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 1em;
+      }
+
+       a {
+        background-color: transparent;
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+       abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+
+       :where(b, strong) {
+        font-weight: bold;
+      }
+
+       small {
+        font-size: 80%;
+      }
+
+       :where(sub,sup) {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+       sub {
+        bottom: -0.25em;
+      }
+
+       sup {
+        top: -0.5em;
+      }
+
+       img {
+        border-style: none;
+      }
+
+       :where(button, input, optgroup, select, textarea) {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+       :where(button, input) {
+        overflow: visible;
+      }
+
+       :where(button, select) {
+        text-transform: none;
+      }
+
+       :where(
+          button::-moz-focus-inner,
+          [type="button"]::-moz-focus-inner,
+          [type="reset"]::-moz-focus-inner,
+          [type="submit"]::-moz-focus-inner
+        ) {
+        border-style: none;
+        padding: 0;
+      }
+
+       fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+
+       legend {
+        box-sizing: border-box;
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal;
+      }
+
+       progress {
+        vertical-align: baseline;
+      }
+
+       textarea {
+        overflow: auto;
+      }
+
+       :where([type="checkbox"], [type="radio"]) {
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+       input[type="number"]::-webkit-inner-spin-button,
+       input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+      }
+
+       input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+       input[type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+
+       input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none !important;
+      }
+
+       ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+
+       details {
+        display: block;
+      }
+
+       summary {
+        display: list-item;
+      }
+
+      template {
+        display: none;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+       :where(
+          blockquote,
+          dl,
+          dd,
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          hr,
+          figure,
+          p,
+          pre
+        ) {
+        margin: 0;
+      }
+
+       button {
+        background: transparent;
+        padding: 0;
+      }
+
+       fieldset {
+        margin: 0;
+        padding: 0;
+      }
+
+       :where(ol, ul) {
+        margin: 0;
+        padding: 0;
+      }
+
+       textarea {
+        resize: vertical;
+      }
+
+       :where(button, [role="button"]) {
+        cursor: pointer;
+      }
+
+       button::-moz-focus-inner {
+        border: 0 !important;
+      }
+
+       table {
+        border-collapse: collapse;
+      }
+
+       :where(h1, h2, h3, h4, h5, h6) {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+       :where(button, input, optgroup, select, textarea) {
+        padding: 0;
+        line-height: inherit;
+        color: inherit;
+      }
+
+       :where(img, svg, video, canvas, audio, iframe, embed, object) {
+        display: block;
+      }
+
+       :where(img, video) {
+        max-width: 100%;
+        height: auto;
+      }
+
+      [data-js-focus-visible]
+        :focus:not([data-focus-visible-added]):not(
+          [data-focus-visible-disabled]
+        ) {
+        outline: none;
+        box-shadow: none;
+      }
+
+       select::-ms-expand {
+        display: none;
+      }
+
+      
+  :root,
+  :host {
+    --chakra-vh: 100vh;
+  }
+
+  @supports (height: -webkit-fill-available) {
+    :root,
+    :host {
+      --chakra-vh: -webkit-fill-available;
+    }
+  }
+
+  @supports (height: -moz-fill-available) {
+    :root,
+    :host {
+      --chakra-vh: -moz-fill-available;
+    }
+  }
+
+  @supports (height: 100dvh) {
+    :root,
+    :host {
+      --chakra-vh: 100dvh;
+    }
+  }
+
+    </style><div id="london" style="width:100%;line-height:1;color:#222;height:100%;background-color:#FFF;position:relative;font-family:&#x27;Roboto&#x27;, sans-serif;font-size:12px"><div style="display:flex;flex-direction:row;justify-content:space-between;background-color:#FFBB00;margin-bottom:21.333333333333332px;padding-top:21.333333333333332px;padding-right:106.66666666666667px;padding-bottom:21.333333333333332px;padding-left:106.66666666666667px"><div style="font-weight:700;text-transform:uppercase;margin-right:21.333333333333332px;font-size:30px"><p>Omar</p><p>Saber abdo</p></div><div><p style="font-weight:700;margin-bottom:5.333333333333333px">Software Engineer </p><p style="margin-bottom:5.333333333333333px">St&#x27; 9, Maadi, Cairo Egypt </p><p style="margin-bottom:5.333333333333333px">01069415101</p><p style="margin-bottom:5.333333333333333px">omaralabaseery81@gmail.com</p><a href="https://omaralabaseery.github.io/resume/" style="color:#00A1F1;text-decoration:none">omaralabaseery.github.io/resume/</a></div></div><div style="padding-right:106.66666666666667px;padding-left:106.66666666666667px"><div style="margin-bottom:21.333333333333332px"><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Profile</p></div><p style="line-height:1.4">“Experienced Software Engineer and Full-Stack Developer specializing in Java with Spring Boot and Angular </p><p style="line-height:1.4"></p><p style="line-height:1.4">Possesses strong expertise in IT development, including data centre management, and holds certifications in AI. Passionate about building scalable and efficient systems while integrating AI-driven solutions.”</p><p style="line-height:1.4">Knowledgeable in user interface, testing, and debugging processes. Experienced Web Developer adept in all stages of advanced web development. Able to effectively self-manage during independent projects, as well as collaborate in a team setting. </p><p style="line-height:1.4"></p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Employment History</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Backend developer , Freelancer</p><p style="color:#707678;margin-bottom:10.666666666666666px">10/8/2023 - 5/9/2023</p><p style="line-height:1.4">Designed and implemented RESTful APIs and developed data models and database schemas (SQL/NoSQL) to optimize performance and scalability.</p><p style="line-height:1.4">handle API requests, validation, and business logic.</p><p style="line-height:1.4">MVC Architecture, RESTful APIs, Microservices</p><p style="line-height:1.4"></p><p style="line-height:1.4"></p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Backend developer , Armed Forces Agouza Rehabilitation and Rheumatology Center, Cairo, Agouza</p><p style="color:#707678;margin-bottom:10.666666666666666px">25/5/2024 - Present</p><p style="line-height:1.4">Developed and maintained high-performance RESTful APIs using Spring Boot</p><p style="line-height:1.4">MVC Architecture, RESTful APIs, Microservices.</p><p style="line-height:1.4">Optimize performance and scalability.</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">IT Department, ARRC, Cairo, Agouza</p><p style="color:#707678;margin-bottom:10.666666666666666px">25/5/2024  - 1/6/2025</p><p style="line-height:1.4">Managed biometric attendance systems (fingerprint scanners) with SQL Server database integration, security camera maintenance, and help desk support for printers, PCs, and network issues.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Ensured system reliability, data security, and quick troubleshooting to minimize operational disruptions.</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Software engineer, ARRC, Cairo, Agouza</p><p style="color:#707678;margin-bottom:10.666666666666666px">25/5/2024 - 1/6/2025</p><p style="line-height:1.4">I was designs, develops, tests, and maintains software applications and systems, applying engineering principles to solve real-world problems</p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Projects</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Backend developer | UI/UX, Infantry House Flow ERP, Cairo</p><p style="color:#707678;margin-bottom:10.666666666666666px">30/4/2024 - 20/5/2024</p><p style="line-height:1.4">Restaurant and Cafe ERB system at Armed Forces Infantry House </p><p style="line-height:1.4">Developed a full-stack ERP system for restaurants &amp; cafes, handling orders, inventory, staff management, and billing.</p><p style="line-height:1.4">Designed relational database models for menu items, suppliers, stock tracking, and sales analytics.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Built RESTful APIs (Spring REST Framework) for real-time order processing and inventory updates.</p><p style="line-height:1.4"></p><p style="line-height:1.4"></p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Backend developer , E-Commerce website</p><p style="color:#707678;margin-bottom:10.666666666666666px">11/12/2024 - 25/2/2025</p><p style="line-height:1.4">Built RESTful APIs for product catalog, cart, and checkout, handling 50+ orders/day.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Secured backend with JWT authentication reducing unauthorized access by 90%.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Optimized performance by 35% using Redis caching and Hibernate batch processing.</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Backend developer , E-Learning website</p><p style="color:#707678;margin-bottom:10.666666666666666px">5/9/2024 - 28/11/2024</p><p style="line-height:1.4">Developed course &amp; user progress APIs with Spring Data JPA, serving 10,000+ students.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Implemented real-time chat (Spring WebSockets) and secure video streaming (AWS S3).</p><p style="line-height:1.4"></p><p style="line-height:1.4">Automated certificate generation and subscription billing, reducing manual work by 50%.</p><p style="line-height:1.4"></p><p style="line-height:1.4">Improved query speed by 40% via Hibernate caching and database indexing.</p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Education</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Bachelor of Computer Information Technology , <a href="https://www.fue.edu.eg/" style="color:#00A1F1;text-decoration:none">Future University in Egypt</a></p><p style="color:#707678;margin-bottom:10.666666666666666px">1/9/2019 - 23/6/2023</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Bachelor of Computer Information Technology, <a href="https://www.uc.edu/" style="color:#00A1F1;text-decoration:none">Cincinnati University </a></p><p style="color:#707678;margin-bottom:10.666666666666666px">1/9/2019 - 23/6/2023</p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Certificates</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">  AITB, Angular framework Certificate, Cairo</p><p style="color:#707678;margin-bottom:10.666666666666666px">27/7/2023 - 31/8/2023</p><p style="line-height:1.4">single-page applications (SPAs) using TypeScript, HTML, and CSS. It provides a component-based architecture, two-way data binding, dependency injection</p><p style="line-height:1.4">Training hours 50</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">Zewail City of Science and Technology,  Artificial intelligence Certificate</p><p style="color:#707678;margin-bottom:10.666666666666666px">1/3/2023 - 1/11/2023</p><p style="line-height:1.4">International accredited institution </p><p style="line-height:1.4">Training hours 50</p></div><div style="margin-bottom:21.333333333333332px"><p style="font-weight:700;margin-bottom:5.333333333333333px;font-size:14px">British University in Egypt, Artificial intelligence Certificate</p><p style="color:#707678;margin-bottom:10.666666666666666px">7/2/2025 - 9/2/2025</p><p style="line-height:1.4">International accredited institution </p><p style="line-height:1.4">Training hours 15</p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Skills</p></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;margin-bottom:21.333333333333332px"><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Language: Java, JavaScript, TypeScript, Python, Html, CSS.</p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Database: MySQL, MongoDB, SQL server.</p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px"></p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Framework: Angular, Spring boot, Android Studio.                                  </p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Tools: Postman, swagger, GitHub,</p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Languages</p></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;margin-bottom:21.333333333333332px"><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Arbic </p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">English (C1)</p><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px"></p></div><div style="display:flex;flex-direction:row;margin-bottom:10.666666666666666px"><p style="color:#FFF;font-weight:700;text-transform:uppercase;background-color:#000;padding:5.333333333333333px;letter-spacing:1.3333333333333333px">Military service </p></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;margin-bottom:21.333333333333332px"><p style="background-color:#F7F7F7;margin-right:5.333333333333333px;margin-bottom:5.333333333333333px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px">Completed </p></div></div></div>
